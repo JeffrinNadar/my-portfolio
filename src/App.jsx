@@ -69,15 +69,17 @@ export default function App() {
       <section id="about" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold text-gray-900 mb-8">About Me</h3>
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             <p className="text-lg text-gray-700 mb-4">
-              I'm a passionate developer with a strong foundation in modern web technologies. I love creating user-friendly applications that solve real-world problems.
+              I'm a passionate developer with a strong foundation in modern web technologies.
+              I love creating user-friendly applications that solve real-world problems.
             </p>
             <p className="text-lg text-gray-700 mb-4">
-              With experience in both frontend and backend development, I bring a holistic approach to building digital products. I'm always eager to learn new technologies and take on challenging projects.
+              With experience in both frontend and backend development, I bring a holistic approach to building digital products.
+              I'm always eager to learn new technologies and take on challenging projects.
             </p>
             <p className="text-lg text-gray-700">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+              When I'm not coding, you can find me exploring new technologies, reading a novel, or going to the gym.
             </p>
           </div>
         </div>
@@ -101,7 +103,6 @@ export default function App() {
               <h4 className="text-xl font-semibold text-gray-900 mb-4">Backend</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Node.js / Express</li>
-                <li>• Python / Django</li>
                 <li>• REST APIs</li>
                 <li>• Database Management</li>
               </ul>
@@ -110,8 +111,8 @@ export default function App() {
               <h4 className="text-xl font-semibold text-gray-900 mb-4">Tools & Other</h4>
               <ul className="space-y-2 text-gray-700">
                 <li>• Git / GitHub</li>
-                <li>• Docker</li>
-                <li>• AWS / Cloud Services</li>
+                <li>• GitHub Actions</li>
+                <li>• VS Code</li>
                 <li>• Agile / Scrum</li>
               </ul>
             </div>
@@ -124,31 +125,52 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold text-gray-900 mb-12">Featured Projects</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[1, 2, 3].map((project) => (
-              <div key={project} className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
-                <div className="p-6">
-                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Project Name {project}</h4>
-                  <p className="text-gray-700 mb-4">
-                    Brief description of your project. What problem does it solve? What technologies did you use?
-                  </p>
-                  <div className="flex gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">React</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Node.js</span>
-                  </div>
-                  <div className="flex gap-4">
-                    <a href="#" className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
-                      <Github size={18} />
-                      Code
-                    </a>
-                    <a href="#" className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
-                      <ExternalLink size={18} />
-                      Live Demo
-                    </a>
-                  </div>
+
+            {/* Project 1 */}
+            <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">DubTech</h4>
+                <p className="text-gray-700 mb-4">
+                  A fully-functional e-commerce website built with a classic web stack.
+                  The frontend is powered by HTML, CSS, and Vanilla JavaScript for a lightweight and dynamic user experience.
+                  The backend is built using Node.js with Express and uses SQLite for data persistence.
+                </p>
+                <div className="flex gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HTML/CSS</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Node.js</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">SQLite</span>
+                </div>
+                <div className="flex gap-4">
+                  <a href="https://github.com/JeffrinNadar/dubtech"
+                  target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
+                    <Github size={18} />
+                    Code
+                  </a>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* Project 2 */}
+            <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-purple-400 to-purple-600"></div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">LeetBot</h4>
+                <p className="text-gray-700 mb-4">
+                  This is a project I'm working on right now and its to help developers on their leetcode journey.
+                  A lot of people go through leetcode but might not understand some of the questions. The purpose of
+                  the bot is to help people when they get stuck or want to practice certain questions. How could they
+                  optimize their approach, what are good sliding window questions, or what was the question I was stuck
+                  on last week? The bot is custom tuned to you and help you when you need it.
+                </p>
+                <div className="flex gap-2 mb-4">
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Ollama</span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Node.js</span>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </section>
@@ -163,14 +185,14 @@ export default function App() {
             </p>
             <div className="flex gap-6">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:anthony.jeffrin.b@gmail.com"
                 className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <Mail size={20} />
                 Email Me
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://linkedin.com/in/jeffrinnadar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
@@ -179,7 +201,7 @@ export default function App() {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/JeffrinNadar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
@@ -195,7 +217,7 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <p>© 2025 Your Name. All rights reserved.</p>
+          <p>© 2025 Jeffrin Nadar. All rights reserved.</p>
         </div>
       </footer>
     </div>
