@@ -16,7 +16,7 @@ export default function App() {
       <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-900">Your Name</h1>
+            <h1 className="text-2xl font-bold text-gray-900">Jeffrin Nadar</h1>
             <div className="flex gap-8">
               {['home', 'about', 'skills', 'projects', 'contact'].map((section) => (
                 <button
@@ -39,7 +39,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl">
             <h2 className="text-5xl font-bold text-gray-900 mb-4">
-              Hi, I'm [Your Name]
+              Hi, I'm Jeffrin Nadar
             </h2>
             <p className="text-2xl text-gray-600 mb-8">
               Software Developer | Problem Solver | Tech Enthusiast
