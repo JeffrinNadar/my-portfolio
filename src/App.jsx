@@ -36,7 +36,7 @@ export default function App() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Call once on mount to set initial state
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
