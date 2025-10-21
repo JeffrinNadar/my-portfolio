@@ -45,7 +45,7 @@ export default function App() {
               Software Developer | Problem Solver | Tech Enthusiast
             </p>
             <p className="text-lg text-gray-700 mb-8">
-              I build elegant solutions to complex problems. Currently seeking opportunities to contribute to innovative teams.
+              I build innovative solutions to complex problems. Currently seeking opportunities to contribute to creative teams.
             </p>
             <div className="flex gap-4">
               <button
@@ -183,31 +183,31 @@ export default function App() {
             <p className="text-lg text-gray-700 mb-8">
               I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               <a
                 href="mailto:anthony.jeffrin.b@gmail.com"
-                className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <Mail size={20} />
-                Email Me
+                <span>Email Me</span>
               </a>
               <a
                 href="https://linkedin.com/in/jeffrinnadar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
+                className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
               >
                 <Linkedin size={20} />
-                LinkedIn
+                <span>LinkedIn</span>
               </a>
               <a
                 href="https://github.com/JeffrinNadar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
+                className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
               >
                 <Github size={20} />
-                GitHub
+                <span>GitHub</span>
               </a>
             </div>
           </div>
