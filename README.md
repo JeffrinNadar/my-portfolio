@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React and Vite, showcasing my projects, skills, and experience.
 
-🔗 **Live Site:** coming soon
+🔗 **Live Site:** [jeffrinnadar.vercel.app](https://jeffrinnadar.vercel.app)
 
 ## 🚀 Features
 
@@ -107,7 +107,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Jeffrin Nadar - [anthony.jeffrin.b@gmail.com](mailto:anthony.jeffrin.b@gmail.com)
 
-Portfolio: coming soon
+Portfolio: [jeffrinnadar.vercel.app](https://jeffrinnadar.vercel.app)
 
 GitHub: [@JeffrinNadar](https://github.com/JeffrinNadar)
 
