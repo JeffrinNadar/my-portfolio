@@ -14,15 +14,15 @@ export default function App() {
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4">
+        <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-900">Jeffrin Nadar</h1>
-            <div className="flex gap-8">
+            <h1 className="text-xl md:text-2xl font-bold text-gray-900">Jeffrin Nadar</h1>
+            <div className="flex gap-3 md:gap-8">
               {['home', 'about', 'skills', 'projects', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`capitalize hover:text-blue-600 transition-colors ${
+                  className={`capitalize hover:text-blue-600 transition-colors md:text-base ${
                     activeSection === section ? 'text-blue-600 font-medium' : 'text-gray-600'
                   }`}
                 >
