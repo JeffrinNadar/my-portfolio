@@ -1,14 +1,44 @@
-import React, { useState } from 'react';
-import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   const scrollToSection = (sectionId) => {
-    setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+      const scrollPosition = window.scrollY + 150;
+
+      const isBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10;
+
+      if (isBottom) {
+        setActiveSection('contact');
+        return;
+      }
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once on mount to set initial state
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -22,7 +52,7 @@ export default function App() {
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`capitalize hover:text-blue-600 transition-colors md:text-base ${
+                  className={`capitalize hover:text-blue-600 transition-colors text-sm md:text-base ${
                     activeSection === section ? 'text-blue-600 font-medium' : 'text-gray-600'
                   }`}
                 >
@@ -113,7 +143,6 @@ export default function App() {
                 <li>• Git / GitHub</li>
                 <li>• GitHub Actions</li>
                 <li>• VS Code</li>
-                <li>• Agile / Scrum</li>
               </ul>
             </div>
           </div>
@@ -157,11 +186,9 @@ export default function App() {
               <div className="p-6">
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">LeetBot</h4>
                 <p className="text-gray-700 mb-4">
-                  This is a project I'm working on right now and its to help developers on their leetcode journey.
-                  A lot of people go through leetcode but might not understand some of the questions. The purpose of
-                  the bot is to help people when they get stuck or want to practice certain questions. How could they
-                  optimize their approach, what are good sliding window questions, or what was the question I was stuck
-                  on last week? The bot is custom tuned to you and help you when you need it.
+                  An AI-powered coding assistant that helps developers master LeetCode problems.
+                  The bot provides personalized hints, suggests optimization strategies, and tracks your progress.
+                  Built to make algorithm practice more effective and less frustrating.
                 </p>
                 <div className="flex gap-2 mb-4">
                   <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Ollama</span>
@@ -170,7 +197,6 @@ export default function App() {
               </div>
             </div>
 
-
           </div>
         </div>
       </section>
@@ -178,7 +204,7 @@ export default function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h3>
           <div className="max-w-3xl">
             <p className="text-lg text-gray-700 mb-8">
               I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
