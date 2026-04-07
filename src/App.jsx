@@ -135,6 +135,8 @@ export default function App() {
                 <li>• Node.js / Express</li>
                 <li>• REST APIs</li>
                 <li>• Database Management</li>
+                <li>• Fast API</li>
+                <li>• Flask </li>
               </ul>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -143,6 +145,7 @@ export default function App() {
                 <li>• Git / GitHub</li>
                 <li>• GitHub Actions</li>
                 <li>• VS Code</li>
+                <li>• Claude Code</li>
               </ul>
             </div>
           </div>
@@ -184,15 +187,69 @@ export default function App() {
             <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="h-48 bg-gradient-to-br from-purple-400 to-purple-600"></div>
               <div className="p-6">
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">LeetBot</h4>
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">Multimodal Product Classifier</h4>
                 <p className="text-gray-700 mb-4">
-                  An AI-powered coding assistant that helps developers master LeetCode problems.
-                  The bot provides personalized hints, suggests optimization strategies, and tracks your progress.
-                  Built to make algorithm practice more effective and less frustrating.
+                  A deep learning model that classifies products based on both images and text descriptions.
+                  The model uses a combination of convolutional neural networks (CNNs) for image processing and natural language processing (NLP) techniques for text analysis.
+                  It achieves high accuracy in categorizing products, making it ideal for e-commerce applications.
                 </p>
                 <div className="flex gap-2 mb-4">
-                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Ollama</span>
-                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Node.js</span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Pytorch</span>
+                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Python</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-green-400 to-green-600"></div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">Study Assistant</h4>
+                <p className="text-gray-700 mb-4">
+                  A study assistant that allows users to upload PDF documents and ask questions about the content.
+                  The assistant uses AI to analyze the document and provide accurate answers, making it easier for students to understand complex materials.
+                </p>
+                <div className="flex gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">FastAPI</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">React</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">SQLite</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">FAISS</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 4 */}
+            <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-orange-400 to-orange-600"></div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">Automated Stock Portfolio Tracker</h4>
+                <p className="text-gray-700 mb-4">
+                  An automated stock portfolio tracker that provides real-time updates and analytics for stock portfolio.
+                  The tracker uses market data to send alerts on stock price changes. Utilizes AWS Lambda for serverless execution, SNS for notifications, and DynamoDB for data storage.
+                  Event driven architecture ensures efficient and scalable performance, making it an essential tool for investors to stay informed about their portfolios.
+                </p>
+                <div className="flex gap-2 mb-4">
+                  <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">AWS Lambda</span>
+                  <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">SNS</span>
+                  <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">DynamoDB</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 5 */}
+            <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-gradient-to-br from-gray-400 to-gray-600"></div>
+              <div className="p-6">
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">Pinyin Lyrics App</h4>
+                <p className="text-gray-700 mb-4">
+                  A web app that helps users learn Chinese lyrics with pinyin pronunciation.
+                  The app pulls lyrics from Spotify API and uses a pinyin conversion library to display the lyrics in both Chinese characters and pinyin.
+                  Built with React for the front end and Flask for the backend, it provides an educational experience for music lovers looking to learn Chinese through songs.
+                </p>
+                <div className="flex gap-2 mb-4">
+                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">React</span>
+                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Flask</span>
+                  <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Spotify API</span>
                 </div>
               </div>
             </div>
