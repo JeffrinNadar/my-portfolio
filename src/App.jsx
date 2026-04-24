@@ -215,6 +215,12 @@ export default function App() {
                   <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">SQLite</span>
                   <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">FAISS</span>
                 </div>
+                <div className="flex gap-4">
+                  <a href="https://study-assistant-green.vercel.app"
+                  target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-green-600 hover:text-green-700">
+                    🌐 Website
+                  </a>
+                </div>
               </div>
             </div>
 
